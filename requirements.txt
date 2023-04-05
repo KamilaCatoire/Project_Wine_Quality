@@ -2,10 +2,10 @@ boto3
 pandas 
 gunicorn 
 streamlit 
-sklearn 
+scikit-learn
 tensorflow
 matplotlib 
 seaborn 
-plotly 
-mlflow 
+mlflow
+plotly  
 psycopg2-binary
