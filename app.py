@@ -31,7 +31,7 @@ st.set_page_config(
 
 
 st.write("""
-# Wine Quality Prediction DL Web-App 
+# Wine Quality Prediction 
 This app predicts the ** Quality of Wine **  using **wine features** input via the **side panel** 
 """)
 
