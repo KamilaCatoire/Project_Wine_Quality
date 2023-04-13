@@ -5,22 +5,21 @@ WORKDIR /home/app
 RUN apt-get update
 RUN apt-get install nano unzip
 RUN apt install curl -y
+# apt-get command linux. installation de logiciel
 
-RUN curl -fsSL https://get.deta.dev/cli.sh | sh
+# RUN curl -fsSL https://get.deta.dev/cli.sh | sh
+# -fsSL option curl
 
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-RUN unzip awscliv2.zip
-RUN ./aws/install
+# RUN curl "https://awscli.amazoncd aws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+# Invite de commande aws. Pour interagir avec aws. authentification
+# RUN unzip awscliv2.zip
+# RUN ./aws/install
+# cherche script et install dans aws
 
 COPY requirements.txt /dependencies/requirements.txt
+# Il faut créer le folder dans le container
 RUN pip install -r /dependencies/requirements.txt
+#Intall toutes les librairies qui sont dans le fichier requirements
 
-ENV AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
-ENV AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
-ENV BACKEND_STORE_URI=$BACKEND_STORE_URI
-ENV ARTIFACT_STORE_URI=$ARTIFACT_STORE_URI
 
-CMD mlflow server -p $PORT \
-    --host 0.0.0.0 \
-    --backend-store-uri $BACKEND_STORE_URI \
-    --default-artifact-root $ARTIFACT_STORE_URI
+CMD streamlit run --server.port 4000 --server.address "0.0.0.0" app.py
