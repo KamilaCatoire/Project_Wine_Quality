@@ -185,7 +185,7 @@ option = {
   ]
 }
 
-st_echarts(option, height="500px")
+st_echarts(option, height="400px")
 
 
 data_row = user_input_df[2]
@@ -198,7 +198,7 @@ exp = explainer.explain_instance(
 # afficher l'explication dans Streamlit
 # exp.show_in_notebook(show_table=True)
 fig = exp.as_pyplot_figure()
-fig.set_size_inches(10, 8)
+fig.set_size_inches(8, 6)
 fig.set_facecolor('none')
 st.pyplot(fig)
 # st.markdown(exp.as_html(), unsafe_allow_html=True)    
