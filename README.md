@@ -1,4 +1,11 @@
 # Project_Wine_Quality
+-----------------------------------------------------------------------------------------------------------------------------
+
+*This project is a part of my Jedha Data Fullstack program certification*
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
 Our application is avaible here https://project-wine-quality.streamlit.app/
 
 ## Introduction
