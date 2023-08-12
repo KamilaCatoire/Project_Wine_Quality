@@ -37,3 +37,8 @@ With that said, here we go!
 
 
 ![Application structure](https://github.com/KamilaCatoire/Project_Wine_Quality/assets/117351364/7a6e08fe-de4d-4213-a483-2e669b391a81)
+
+
+## Video presetation
+
+https://share.vidyard.com/watch/NvdZTJYniR8iiGVfak13km?
